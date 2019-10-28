@@ -2,20 +2,20 @@ importance: 5
 
 ---
 
-# Deposit calculator
+# 예금 계산기
 
-Create an interface that allows to enter a sum of bank deposit and percentage, then calculates how much it will be after given periods of time.
+은행 예금 합계와 이자율을 입력할 수 있고 주어진 시간 후에 얼마가 될지를 계산하는 인터페이스를 만들어봅시다.
 
-Here's the demo:
+예제:
 
 [iframe src="solution" height="350" border="1"]
 
-Any input change should be processed immediately.
+모든 출력값은 입력값을 넣는 즉시 변경되어야 합니다.
 
-The formula is:
+공식은 아래와 같습니다.
 ```js
-// initial: the initial money sum
-// interest: e.g. 0.05 means 5% per year
-// years: how many years to wait
+// 초기 상태: 은행 예금 합계를 의미합니다.
+// 이자율: 0.05는 연 5%를 의미합니다.
+// 기간: 예금을 유치하는 기간을 설정합니다.
 let result = Math.round(initial * (1 + interest * years));
 ```
